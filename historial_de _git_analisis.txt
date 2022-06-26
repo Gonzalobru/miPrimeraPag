@@ -1,0 +1,205 @@
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git commint -m
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git commit -m ceremonias
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrador1@Tango20.(none)')
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Administrador1/Desktop/SCRUM_TAREA/.git/
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git git remote add origin " https://github.com/Gonzalobru/Aula-17-grupo-2-.git"
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git git remote add origin " https://github.com/Gonzalobru/Aula-17-grupo-2-.
+> git git remote add origin " https://github.com/Gonzalobru/Aula-17-grupo-2-.
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git remote add origin " https://github.com/Gonzalobru/Aula-17-grupo-2-.git"
+
+error: remote origin already exists.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ceremonias_de_Scrum.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git add    Ceremonias_de_Scrum.pdf
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Ceremonias_de_Scrum.pdf
+
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git commit -m "Ceremonias"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrador1@Tango20.(none)')
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git config user.name Gonzalobru
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git config user.email gonzalo.bruzzo@gmail.com
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git remote add origin " https://github.com/Gonzalobru/Aula-17-grupo-2-.git"
+error: remote origin already exists.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git commit -m "Ceremonias"
+[master (root-commit) 5bbae75] Ceremonias
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Ceremonias_de_Scrum.pdf
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git branch GonzaloB17
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git checkout GonzaloB17
+Switched to branch 'GonzaloB17'
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ git push -u origin GonzaloB17
+To https://github.com/Gonzalobru/Aula-17-grupo-2-.git
+ ! [rejected]        GonzaloB17 -> GonzaloB17 (fetch first)
+error: failed to push some refs to 'https://github.com/Gonzalobru/Aula-17-grupo-2-.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ git push -u origin GonzaloB17
+To https://github.com/Gonzalobru/Aula-17-grupo-2-.git
+ ! [rejected]        GonzaloB17 -> GonzaloB17 (fetch first)
+error: failed to push some refs to 'https://github.com/Gonzalobru/Aula-17-grupo-2-.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 102.59 KiB | 20.52 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Gonzalobru/Aula-17-grupo-2-/pull/new/master
+remote:
+To https://github.com/Gonzalobru/Aula-17-grupo-2-.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git push -u origin GonzaloB17
+To https://github.com/Gonzalobru/Aula-17-grupo-2-.git
+ ! [rejected]        GonzaloB17 -> GonzaloB17 (fetch first)
+error: failed to push some refs to 'https://github.com/Gonzalobru/Aula-17-grupo-2-.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git branch
+  GonzaloB17
+* master
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (master)
+$ git checkout GonzaloB17
+Switched to branch 'GonzaloB17'
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ git push -u origin GonzaloB17
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'GonzaloB17' on GitHub by visiting:
+remote:      https://github.com/Gonzalobru/Aula-17-grupo-2-/pull/new/GonzaloB17
+remote:
+To https://github.com/Gonzalobru/Aula-17-grupo-2-.git
+ * [new branch]      GonzaloB17 -> GonzaloB17
+branch 'GonzaloB17' set up to track 'origin/GonzaloB17'.
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ git status
+On branch GonzaloB17
+Your branch is up to date with 'origin/GonzaloB17'.
+
+nothing to commit, working tree clean
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ git merge GonzaloB17 main
+merge: main - not something we can merge
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+$ Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
+bash: syntax error near unexpected token `('
+
+Administrador1@Tango20 MINGW64 ~/Desktop/SCRUM_TAREA (GonzaloB17)
